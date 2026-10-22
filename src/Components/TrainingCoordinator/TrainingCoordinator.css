@@ -1,0 +1,308 @@
+.Prp-Training-Coordinator-Container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(
+    90deg,
+    #526a96 0%,
+    #8b98b8 25%,
+    #c3c9db 42%,
+    #ffffff 60%
+  );
+  box-sizing: border-box;
+}
+
+.Prp-Training-Coordinator-Container *,
+.Prp-Training-Coordinator-Container *::before,
+.Prp-Training-Coordinator-Container *::after {
+  box-sizing: border-box;
+}
+
+.Prp-Training-Coordinator-Left-Section {
+  position: relative;
+  width: 46%;
+  padding: 40px 0 40px 123px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Prp-Training-Coordinator-Brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: -1px;
+}
+
+.Prp-Training-Coordinator-Brand-Logo {
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  object-fit: contain;
+  background: #152a58;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.Prp-Training-Coordinator-Brand-Title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.Prp-Training-Coordinator-Brand-Tagline {
+  margin: 2px 0 0;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.Prp-Training-Coordinator-Dot {
+  width: 4px;
+  height: 4px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.Prp-Training-Coordinator-Hero {
+  margin-top: 32px;
+}
+
+.Prp-Training-Coordinator-Hero-Title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.Prp-Training-Coordinator-Hero-Description {
+  margin: 10px 0 0;
+  max-width: 300px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.Prp-Training-Coordinator-Illustration {
+  width: 520px;
+  max-width: 100%;
+  margin-top: 40px;
+  object-fit: contain;
+}
+
+.Prp-Training-Coordinator-Trust-Card {
+  position: absolute;
+  left: 123px;
+  bottom: 50px;
+  width: 480px;
+  max-width: calc(100% - 123px);
+  height: 53px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 18px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 6px;
+}
+
+.Prp-Training-Coordinator-Trust-Icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.Prp-Training-Coordinator-Trust-Divider {
+  width: 1px;
+  height: 28px;
+  background: #5d6b8a;
+}
+
+.Prp-Training-Coordinator-Trust-Title {
+  margin: 0;
+  font-size: 12px;
+  color: #3d4a6b;
+}
+
+.Prp-Training-Coordinator-Trust-Subtitle {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #4c5a7a;
+}
+
+.Prp-Training-Coordinator-Right-Section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding: 55px 0 40px 40px;
+}
+
+.Prp-Training-Coordinator-Form-Wrapper {
+  width: 634px;
+  max-width: 100%;
+}
+
+.Prp-Training-Coordinator-Form-Title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #152a58;
+}
+
+.Prp-Training-Coordinator-Form-Subtitle {
+  margin: 6px 0 18px;
+  font-size: 12px;
+  color: #4b5675;
+}
+
+.Prp-Training-Coordinator-Field-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.Prp-Training-Coordinator-Role-Field {
+  margin-bottom: 18px;
+}
+
+.Prp-Training-Coordinator-Label {
+  font-size: 11px;
+  color: #1c2a50;
+  letter-spacing: 0.2px;
+}
+
+.Prp-Training-Coordinator-Form-Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 16px;
+}
+
+.Prp-Training-Coordinator-Input,
+.Prp-Training-Coordinator-Select {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  font-family: inherit;
+  font-size: 12px;
+  color: #3d4560;
+  background: #ffffff;
+  border: 1px solid #d3d8e6;
+  border-radius: 6px;
+  outline: none;
+}
+
+.Prp-Training-Coordinator-Input::placeholder {
+  color: #7d8499;
+}
+
+.Prp-Training-Coordinator-Input:focus,
+.Prp-Training-Coordinator-Select:focus {
+  border-color: #152a58;
+}
+
+.Prp-Training-Coordinator-Select-Container {
+  position: relative;
+}
+
+.Prp-Training-Coordinator-Select {
+  height: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+.Prp-Training-Coordinator-Select-Arrow {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.Prp-Training-Coordinator-Agreement {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.Prp-Training-Coordinator-Checkbox {
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.Prp-Training-Coordinator-Agreement-Text {
+  font-size: 11px;
+  color: #4b5675;
+  cursor: pointer;
+}
+
+.Prp-Training-Coordinator-Link {
+  font-weight: 700;
+  color: #152a58;
+}
+
+.Prp-Training-Coordinator-Submit-Button {
+  width: 100%;
+  height: 42px;
+  margin-top: 14px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #152a58;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Prp-Training-Coordinator-Submit-Button:hover {
+  background: #0f2048;
+}
+
+.Prp-Training-Coordinator-Login-Text {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 11px;
+  color: #4b5675;
+}
+
+.Prp-Training-Coordinator-Login-Link {
+  margin-left: 18px;
+  font-weight: 700;
+  color: #152a58;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .Prp-Training-Coordinator-Left-Section {
+    display: none;
+  }
+
+  .Prp-Training-Coordinator-Container {
+    background: #ffffff;
+  }
+
+  .Prp-Training-Coordinator-Right-Section {
+    padding: 40px 24px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .Prp-Training-Coordinator-Form-Grid {
+    grid-template-columns: 1fr;
+  }
+}

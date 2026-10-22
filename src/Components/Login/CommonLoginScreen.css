@@ -1,0 +1,706 @@
+.CommonLoginScreen-container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: linear-gradient(270deg, #FFFFFF 40%, #566B94 90%);
+
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.CommonLoginScreen-left {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 48px 7% 45px;
+   background: linear-gradient(270deg, #FFFFFF 40%, #566B94 90%);
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background: transparent;
+    overflow: hidden
+}
+
+.CommonLoginScreen-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px
+}
+
+.CommonLoginScreen-brandLogo {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #132A56;
+    border-radius: 8px
+}
+
+.CommonLoginScreen-brandLogo img {
+    width: 28px;
+    height: 28px;
+    display: block;
+    object-fit: contain
+}
+
+.CommonLoginScreen-brandContent {
+    display: flex;
+    flex-direction: column
+}
+
+.CommonLoginScreen-brandContent h3 {
+    margin: 0 0 4px;
+    font-size: 19px;
+    line-height: 1.2;
+    font-weight: 700
+}
+
+.CommonLoginScreen-brandContent p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 500
+}
+
+ .CommonLoginScreen-dot {
+     width: 4px;
+     height: 4px;
+     gap: 4px;
+     margin: 2px 0 0;
+     margin: 0;
+     display: inline-block;
+     vertical-align: middle;
+     position: relative;
+     top: -1px;
+     border-radius: 50%;
+     background: #ffffff
+ }
+
+.CommonLoginScreen-welcomeContent {
+    margin-top: 38px
+}
+
+.CommonLoginScreen-welcomeContent h5 {
+    margin: 0 0 18px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700
+}
+
+.CommonLoginScreen-welcomeContent h1 {
+    margin: 0;
+    font-size: 38px;
+    line-height: 0.98;
+    font-weight: 700;
+    letter-spacing: -0.5px
+}
+
+.CommonLoginScreen-welcomeContent p {
+    margin: 13px 0 0;
+    font-size: 15px;
+    line-height: 1.35;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.96)
+}
+
+.CommonLoginScreen-features {
+    width: 100%;
+    max-width: 610px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    margin-top: 27px
+}
+
+.CommonLoginScreen-feature {
+    min-width: 0
+}
+
+.CommonLoginScreen-featureIcon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #132A56;
+    border-radius: 7px
+}
+
+.CommonLoginScreen-featureIcon img {
+    width: 18px;
+    height: 18px;
+    display: block;
+    object-fit: contain
+}
+
+.CommonLoginScreen-feature h3 {
+    margin: 0 0 6px;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 700
+}
+
+.CommonLoginScreen-feature p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.92)
+}
+
+.CommonLoginScreen-illustrationContainer {
+    flex: 1;
+    min-height: 300px;
+    max-width: 650px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.CommonLoginScreen-illustrationContainer img {
+    width: 88%;
+    max-width: 600px;
+    max-height: 420px;
+    display: block;
+    object-fit: contain
+}
+
+.CommonLoginScreen-info {
+    width: 100%;
+    max-width: 640px;
+    min-height: 54px;
+    box-sizing: border-box;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    border-radius: 8px;
+    background: #D7D7D780;
+}
+
+.CommonLoginScreen-info img {
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.CommonLoginScreen-info p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 700;
+    color:#132A56;
+}
+
+.CommonLoginScreen-right {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0 5% 0 19%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent
+}
+
+.CommonLoginScreen-formContainer {
+    width: 100%;
+    max-width: 515px;
+    transform: translateY(-5px)
+}
+
+.CommonLoginScreen-formHeader {
+    margin-bottom: 35px
+}
+
+.CommonLoginScreen-formHeader h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #173766
+}
+
+.CommonLoginScreen-formHeader p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #8091ae
+}
+
+.CommonLoginScreen-form {
+    display: flex;
+    flex-direction: column
+}
+
+.CommonLoginScreen-field {
+    width: 100%;
+    margin-bottom: 24px
+}
+
+.CommonLoginScreen-field label {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 500;
+    color: #333333
+}
+
+.CommonLoginScreen-passwordLabel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.CommonLoginScreen-passwordLabel label {
+    margin-bottom: 10px
+}
+
+.CommonLoginScreen-forgotPassword {
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 11px;
+    color: #14749e;
+    cursor: pointer
+}
+
+.CommonLoginScreen-inputContainer {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border: 1px solid #cfd1e0;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transition: border-color 0.2s ease
+}
+
+.CommonLoginScreen-inputContainer:focus-within {
+    border-color: #173766
+}
+
+.CommonLoginScreen-inputContainer>img {
+    width: 19px;
+    height: 19px;
+    margin: 0 11px 0 14px;
+    flex-shrink: 0;
+    object-fit: contain;
+    opacity: 0.55
+}
+
+.CommonLoginScreen-inputContainer input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: 13px;
+    color: #333333
+}
+
+.CommonLoginScreen-inputContainer input::placeholder {
+    color: #b8b8b8
+}
+
+.CommonLoginScreen-inputContainer input::-ms-reveal,
+.CommonLoginScreen-inputContainer input::-ms-clear {
+    display: none
+}
+
+.CommonLoginScreen-inputContainer input::-webkit-credentials-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none
+}
+
+.CommonLoginScreen-passwordToggle {
+    width: 48px;
+    height: 100%;
+    padding: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer
+}
+
+.CommonLoginScreen-passwordToggle img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    object-fit: contain;
+    opacity: 0.75
+}
+
+.CommonLoginScreen-remember {
+    width: fit-content;
+    margin: -1px 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    line-height: 1;
+    color: #4b4b4b;
+    cursor: pointer
+}
+
+.CommonLoginScreen-remember input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    accent-color: #173766;
+    cursor: pointer
+}
+
+.CommonLoginScreen-remember span {
+    margin: 0
+}
+
+.CommonLoginScreen-signInButton {
+    width: 100%;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 0;
+    border-radius: 6px;
+    background: #173766;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background 0.2s ease
+}
+
+.CommonLoginScreen-signInButton:hover {
+    background: #102d57
+}
+
+.CommonLoginScreen-signInArrow {
+    width: 16px;
+    height: 16px;
+    object-fit: contain
+}
+
+.CommonLoginScreen-divider {
+    width: 100%;
+    margin: 31px 0;
+    display: flex;
+    align-items: center;
+    gap: 18px
+}
+
+.CommonLoginScreen-divider span {
+    flex: 1;
+    height: 1px;
+    background: #555d69
+}
+
+.CommonLoginScreen-divider p {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 10px;
+    line-height: 1;
+    color: #5f6470
+}
+
+.CommonLoginScreen-googleButton {
+    width: 164px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #d0d2e0;
+    border-radius: 7px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 11px;
+    color: #444444;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04)
+}
+
+.CommonLoginScreen-googleButton img {
+    width: 17px;
+    height: 17px;
+    object-fit: contain
+}
+
+.CommonLoginScreen-createAccount {
+    margin: 28px 0 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #404040
+}
+
+.CommonLoginScreen-createAccount button {
+    margin-left: 4px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    color: #08769e;
+    cursor: pointer
+}
+
+.CommonLoginScreen-footerLinks {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px
+}
+
+.CommonLoginScreen-footerLinks a {
+    font-size: 10px;
+    line-height: 1;
+    text-decoration: none;
+    color: #4e5665
+}
+
+.CommonLoginScreen-footerLinks span {
+    font-size: 9px;
+    color: #aeb5c1
+}
+
+.CommonLoginScreen-footerLinks a:hover {
+    color: #173766
+}
+
+.CommonLoginScreen-desktopBreak {
+    display: block
+}
+
+@media (max-width:1300px) {
+    .CommonLoginScreen-container {
+        grid-template-columns: 45% 55%
+    }
+
+    .CommonLoginScreen-left {
+        padding-left: 6%;
+        padding-right: 5%
+    }
+
+    .CommonLoginScreen-features {
+        column-gap: 20px
+    }
+
+    .CommonLoginScreen-feature h3 {
+        font-size: 18px;
+        white-space: normal
+    }
+
+    .CommonLoginScreen-right {
+        padding-left: 19%;
+        padding-right: 5%
+    }
+
+    .CommonLoginScreen-formContainer {
+        max-width: 500px
+    }
+}
+
+@media (max-width:1000px) {
+    .CommonLoginScreen-container {
+        grid-template-columns: 44% 56%
+    }
+
+    .CommonLoginScreen-left {
+        padding-left: 5%;
+        padding-right: 4%
+    }
+
+    .CommonLoginScreen-right {
+        padding-left: 12%;
+        padding-right: 5%
+    }
+
+    .CommonLoginScreen-welcomeContent h1 {
+        font-size: 32px
+    }
+
+    .CommonLoginScreen-feature h3 {
+        font-size: 16px
+    }
+
+    .CommonLoginScreen-feature p {
+        font-size: 12px
+    }
+}
+
+@media (max-width:800px) {
+    .CommonLoginScreen-container {
+        display: block;
+        background: #ffffff
+    }
+
+    .CommonLoginScreen-left {
+        min-height: auto;
+        padding: 40px 7%;
+        background: linear-gradient(160deg, #58709d 0%, #8395b9 70%, #c1cadb 100%)
+    }
+
+    .CommonLoginScreen-features {
+        margin-top: 35px
+    }
+
+    .CommonLoginScreen-illustrationContainer {
+        min-height: auto;
+        margin: 35px 0
+    }
+
+    .CommonLoginScreen-illustrationContainer img {
+        width: 80%
+    }
+
+    .CommonLoginScreen-right {
+        min-height: auto;
+        padding: 70px 7%;
+        background: #ffffff
+    }
+
+    .CommonLoginScreen-formContainer {
+        max-width: 600px;
+        transform: none
+    }
+}
+
+@media (max-width:600px) {
+    .CommonLoginScreen-left {
+        padding: 30px 20px
+    }
+
+    .CommonLoginScreen-brandLogo {
+        width: 42px;
+        height: 42px
+    }
+
+    .CommonLoginScreen-brandLogo img {
+        width: 28px;
+        height: 28px
+    }
+
+    .CommonLoginScreen-brandContent h3 {
+        font-size: 15px
+    }
+
+    .CommonLoginScreen-brandContent p {
+        font-size: 10px
+    }
+
+    .CommonLoginScreen-welcomeContent {
+        margin-top: 35px
+    }
+
+    .CommonLoginScreen-welcomeContent h5 {
+        font-size: 16px
+    }
+
+    .CommonLoginScreen-welcomeContent h1 {
+        font-size: 28px
+    }
+
+    .CommonLoginScreen-desktopBreak {
+        display: none
+    }
+
+    .CommonLoginScreen-features {
+        grid-template-columns: 1fr;
+        row-gap: 24px
+    }
+
+    .CommonLoginScreen-feature {
+        display: grid;
+        grid-template-columns: 52px 1fr;
+        column-gap: 13px;
+        align-items: center
+    }
+
+    .CommonLoginScreen-featureIcon {
+        grid-row: 1 / 3;
+        margin: 0
+    }
+
+    .CommonLoginScreen-featureIcon img {
+        width: 28px;
+        height: 28px
+    }
+
+    .CommonLoginScreen-feature h3 {
+        margin: 0 0 3px;
+        font-size: 17px
+    }
+
+    .CommonLoginScreen-feature p {
+        font-size: 12px
+    }
+
+    .CommonLoginScreen-illustrationContainer img {
+        width: 100%
+    }
+
+    .CommonLoginScreen-info {
+        padding: 12px 15px
+    }
+
+    .CommonLoginScreen-info p {
+        font-size: 10px
+    }
+
+    .CommonLoginScreen-right {
+        padding: 55px 20px
+    }
+
+    .CommonLoginScreen-formHeader h1 {
+        font-size: 27px
+    }
+
+    .CommonLoginScreen-divider {
+        gap: 10px
+    }
+}
+
+.CommonLoginScreen-inputError {
+    border-color: #d93025
+}
+
+.CommonLoginScreen-inputError:focus-within {
+    border-color: #d93025
+}
+
+.CommonLoginScreen-validationError {
+    margin: 7px 0 0;
+    font-size: 11px;
+    line-height: 1.3;
+    color: #d93025
+}
